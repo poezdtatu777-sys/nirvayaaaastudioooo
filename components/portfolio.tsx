@@ -114,8 +114,32 @@ export function Portfolio() {
           ))}
         </div>
 
-        {/* Подзаголовок стилей */}
-        <div ref={stylesRef} className="text-center mb-10">
+        {/* Styles section with decorative corners */}
+        <div className="relative px-6 py-10 md:px-12 md:py-14">
+          {/* Decorative corner lines */}
+          {/* Left top corner */}
+          <div className="absolute top-0 left-0 w-8 h-8">
+            <div className="absolute top-0 left-0 w-full h-px" style={{ background: "rgba(200,148,62,0.3)" }}></div>
+            <div className="absolute top-0 left-0 h-full w-px" style={{ background: "rgba(200,148,62,0.3)" }}></div>
+          </div>
+          {/* Right top corner */}
+          <div className="absolute top-0 right-0 w-8 h-8">
+            <div className="absolute top-0 right-0 w-full h-px" style={{ background: "rgba(200,148,62,0.3)" }}></div>
+            <div className="absolute top-0 right-0 h-full w-px" style={{ background: "rgba(200,148,62,0.3)" }}></div>
+          </div>
+          {/* Left bottom corner */}
+          <div className="absolute bottom-0 left-0 w-8 h-8">
+            <div className="absolute bottom-0 left-0 w-full h-px" style={{ background: "rgba(200,148,62,0.3)" }}></div>
+            <div className="absolute bottom-0 left-0 h-full w-px" style={{ background: "rgba(200,148,62,0.3)" }}></div>
+          </div>
+          {/* Right bottom corner */}
+          <div className="absolute bottom-0 right-0 w-8 h-8">
+            <div className="absolute bottom-0 right-0 w-full h-px" style={{ background: "rgba(200,148,62,0.3)" }}></div>
+            <div className="absolute bottom-0 right-0 h-full w-px" style={{ background: "rgba(200,148,62,0.3)" }}></div>
+          </div>
+
+          {/* Подзаголовок стилей */}
+          <div ref={stylesRef} className="text-center mb-10">
           <motion.div
             initial={{ opacity: 0, filter: "blur(12px)" }}
             animate={stylesInView ? { opacity: 1, filter: "blur(0px)" } : {}}
@@ -160,7 +184,7 @@ export function Portfolio() {
               className="group cursor-pointer"
             >
               <div
-                className="relative aspect-video rounded-sm overflow-hidden transition-all duration-500"
+                className="relative aspect-video rounded-sm overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(200,148,62,0.15)]"
                 style={{
                   border: "1px solid rgba(200,148,62,0.15)",
                   background: "rgba(14,18,37,0.6)",
@@ -178,6 +202,7 @@ export function Portfolio() {
               </div>
             </motion.div>
           ))}
+        </div>
         </div>
       </div>
     </section>

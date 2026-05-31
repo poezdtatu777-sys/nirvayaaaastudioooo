@@ -33,9 +33,9 @@ export function FaceTransfer() {
             Технология сохранения внешности
           </span>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+            animate={isInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
           >
             <h2 
               className="font-heading font-semibold text-3xl md:text-4xl lg:text-5xl uppercase tracking-[0.12em] leading-tight mb-6"
@@ -61,7 +61,7 @@ export function FaceTransfer() {
         >
           {/* Video placeholder 16:9 */}
           <div
-            className="relative aspect-video rounded-sm overflow-hidden"
+            className="relative aspect-video rounded-sm overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(200,148,62,0.15)]"
             style={{
               border: "1px solid rgba(200,148,62,0.15)",
               background: "rgba(14,18,37,0.6)",
@@ -76,7 +76,7 @@ export function FaceTransfer() {
 
           {/* Photo placeholder 1:1 */}
           <div
-            className="relative w-full md:w-[280px] lg:w-[320px] aspect-square rounded-sm overflow-hidden flex-shrink-0"
+            className="relative w-full md:w-[280px] lg:w-[320px] aspect-square rounded-sm overflow-hidden flex-shrink-0 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(200,148,62,0.15)]"
             style={{
               border: "1px solid rgba(200,148,62,0.15)",
               background: "rgba(14,18,37,0.6)",
@@ -100,7 +100,7 @@ export function FaceTransfer() {
         >
           {/* Video placeholder 16:9 */}
           <div
-            className="relative aspect-video rounded-sm overflow-hidden"
+            className="relative aspect-video rounded-sm overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(200,148,62,0.15)]"
             style={{
               border: "1px solid rgba(200,148,62,0.15)",
               background: "rgba(14,18,37,0.6)",
@@ -115,7 +115,7 @@ export function FaceTransfer() {
 
           {/* Photo placeholder 1:1 */}
           <div
-            className="relative w-full md:w-[280px] lg:w-[320px] aspect-square rounded-sm overflow-hidden flex-shrink-0"
+            className="relative w-full md:w-[280px] lg:w-[320px] aspect-square rounded-sm overflow-hidden flex-shrink-0 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(200,148,62,0.15)]"
             style={{
               border: "1px solid rgba(200,148,62,0.15)",
               background: "rgba(14,18,37,0.6)",

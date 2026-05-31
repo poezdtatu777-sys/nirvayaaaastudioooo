@@ -38,12 +38,24 @@ export function MotionControl() {
             <div className="absolute bottom-0 left-0 w-8 h-8 border-b border-l border-gold/20 rounded-bl-2xl" />
             <div className="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-gold/20 rounded-br-2xl" />
 
-            <p className="font-heading font-normal text-gold text-sm tracking-wider mb-4">
-              MOTION CONTROL
-            </p>
-            <h2 className="font-heading font-semibold text-2xl md:text-3xl lg:text-4xl uppercase tracking-[0.1em] leading-tight mb-5">
+            <span 
+              className="inline-block font-heading font-normal text-xs tracking-[0.2em] uppercase px-4 py-1.5 rounded-full mb-4"
+              style={{ 
+                border: "1px solid rgba(200,148,62,0.3)", 
+                background: "rgba(200,148,62,0.05)", 
+                color: "rgba(200,148,62,0.8)" 
+              }}
+            >
+              Motion Control
+            </span>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+              animate={isInView ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="font-heading font-semibold text-2xl md:text-3xl lg:text-4xl uppercase tracking-[0.1em] leading-tight mb-5"
+            >
               Двигаемся так, как вы скажете
-            </h2>
+            </motion.h2>
             <p className="text-foreground/80 text-base md:text-lg leading-relaxed">
               Нужен конкретный танец? Определённый жест? Точная пластика? 
               Мы переносим любые движения в AI-видео — персонаж делает именно то, что вы задумали.
@@ -60,7 +72,7 @@ export function MotionControl() {
         >
           {/* Video 9:16 (vertical) */}
           <div
-            className="relative w-full md:w-[240px] lg:w-[280px] aspect-[9/16] rounded-sm overflow-hidden flex-shrink-0"
+            className="relative w-full md:w-[240px] lg:w-[280px] aspect-[9/16] rounded-sm overflow-hidden flex-shrink-0 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(200,148,62,0.15)]"
             style={{
               border: "1px solid rgba(200,148,62,0.15)",
               background: "rgba(14,18,37,0.6)",
@@ -79,7 +91,7 @@ export function MotionControl() {
 
           {/* Video 16:9 (horizontal) */}
           <div
-            className="relative aspect-video rounded-sm overflow-hidden"
+            className="relative aspect-video rounded-sm overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_25px_rgba(200,148,62,0.15)]"
             style={{
               border: "1px solid rgba(200,148,62,0.15)",
               background: "rgba(14,18,37,0.6)",
