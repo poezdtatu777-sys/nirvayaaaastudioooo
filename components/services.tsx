@@ -116,7 +116,7 @@ export function Services() {
                       loop
                       muted
                       playsinline
-                      className="mux-player-cover"
+                      style={{ "--media-object-fit": "cover", "--media-object-position": "center", "--controls": "none", width: "100%", height: "100%", position: "absolute", inset: "0" } as any}
                     />
                   ) : null}
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0A0E1A]/90" />

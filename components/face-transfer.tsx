@@ -105,7 +105,7 @@ export function FaceTransfer() {
             <mux-player
               playback-id="82b8it1RsNkYbxBQOvDIgH8B28f7kUNzw1501a64pr1w"
               playsinline
-              className="mux-player-cover"
+              style={{ "--media-object-fit": "cover", "--media-object-position": "center", "--controls": "none", width: "100%", height: "100%", position: "absolute", inset: "0" } as any}
             />
           </div>
 
@@ -139,7 +139,7 @@ export function FaceTransfer() {
             <mux-player
               playback-id="rXF01vqCO2S4l4gf7rtzakp9wVrCrLwIWHAObM02tf602A"
               playsinline
-              className="mux-player-cover"
+              style={{ "--media-object-fit": "cover", "--media-object-position": "center", "--controls": "none", width: "100%", height: "100%", position: "absolute", inset: "0" } as any}
             />
           </div>
 

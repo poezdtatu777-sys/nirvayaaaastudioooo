@@ -146,7 +146,7 @@ export function Hero() {
         </motion.div>
       </div>
 
-
+      <div className="h-[100px]" />
 
       <div
         className="absolute bottom-0 left-0 right-0 h-px"
