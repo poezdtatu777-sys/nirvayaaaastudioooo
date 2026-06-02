@@ -103,19 +103,7 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Badge after banner */}
-      <div className="flex items-center justify-center py-8 md:py-10">
-        <motion.span 
-          initial={{ opacity: 0, y: 10 }} 
-          whileInView={{ opacity: 1, y: 0 }} 
-          viewport={{ once: true }} 
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }} 
-          className="inline-block font-heading font-normal text-xs md:text-sm uppercase tracking-[0.2em] px-5 py-2 rounded-full" 
-          style={{ border: "1px solid rgba(200,148,62,0.2)", background: "rgba(14,18,37,0.8)", color: "rgba(200,148,62,0.75)" }}
-        >
-          AI-продакшн полного цикла • Клипы • Реклама • Контент • Анимация
-        </motion.span>
-      </div>
+
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-[15]">
         {particles.map((particle) => (
@@ -136,7 +124,7 @@ export function Hero() {
         ))}
       </div>
 
-      <div className="relative z-20 mt-12 text-center px-6">
+      <div className="relative z-20 mt-4 text-center px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -158,7 +146,7 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <div className="h-[140px]" />
+
 
       <div
         className="absolute bottom-0 left-0 right-0 h-px"
