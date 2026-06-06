@@ -36,7 +36,7 @@ export function Services() {
 
   return (
     <section id="services" className="py-24 md:py-32 bg-background-secondary relative overflow-hidden">
-      {/* Circuit board background pattern - CHANGE 6 */}
+      {/* Circuit board background pattern */}
       <div className="absolute inset-0 circuit-pattern" />
 
       <div className="max-w-7xl mx-auto px-6" ref={ref}>
@@ -104,7 +104,7 @@ export function Services() {
                     backgroundClip: 'padding-box, border-box',
                   }}
                 >
-                  {/* Hover rings - CHANGE 7 */}
+                  {/* Hover rings */}
                   <div className="hover-ring-1" />
                   <div className="hover-ring-2" />
                   
@@ -112,6 +112,24 @@ export function Services() {
                   {service.title === "Social Media и Reels" ? (
                     <mux-player
                       playback-id="1Xb00owVniaQvFv4lKY6DOWkXbF5dxv3Vvy60101ziufZY"
+                      autoplay="muted"
+                      loop
+                      muted
+                      playsinline
+                      style={{ "--media-object-fit": "cover", "--media-object-position": "center", "--controls": "none", width: "100%", height: "100%", position: "absolute", inset: "0" } as any}
+                    />
+                  ) : service.title === "Рекламные ролики" ? (
+                    <mux-player
+                      playback-id="1Aj00CmAc87EV6VJkmwBcFUA6Hmxr9VXEKJJV52wTiCE"
+                      autoplay="muted"
+                      loop
+                      muted
+                      playsinline
+                      style={{ "--media-object-fit": "cover", "--media-object-position": "center", "--controls": "none", width: "100%", height: "100%", position: "absolute", inset: "0" } as any}
+                    />
+                  ) : service.title === "Анимационный контент" ? (
+                    <mux-player
+                      playback-id="hDM1Oi02UMRgCJu3U02YwvVRwtcKH2XAIj01501oLmLLQ02A"
                       autoplay="muted"
                       loop
                       muted
@@ -146,3 +164,4 @@ export function Services() {
     </section>
   )
 }
+
