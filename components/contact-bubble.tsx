@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Send, X } from "lucide-react"
 
 const contacts = [
-  { name: "Дмитрий", role: "Дизайн", telegram: "@dmitriy_nirvaya", href: "https://t.me/dmitriy_nirvaya" },
-  { name: "Виталий", role: "AI-генерация", telegram: "@vitaliy_nirvaya", href: "https://t.me/vitaliy_nirvaya" },
-  { name: "Владислав", role: "Монтаж", telegram: "@vladislav_nirvaya", href: "https://t.me/vladislav_nirvaya" },
+  { name: "Дмитрий", role: "Neuro Architect", telegram: "@dmitriy_nirvaya", href: "https://t.me/dmitriy_nirvaya" },
+  { name: "Виталий", role: "Creative Lead", telegram: "@vitaliy_nirvaya", href: "https://t.me/vitaliy_nirvaya" },
+  { name: "Владислав", role: "Post-production specialist", telegram: "@vladislav_nirvaya", href: "https://t.me/vladislav_nirvaya" },
 ]
 
 export function ContactBubble() {
