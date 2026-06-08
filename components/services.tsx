@@ -131,6 +131,17 @@ export function Services() {
                         style={{ "--media-object-fit": "cover", "--media-object-position": "center", "--controls": "none", "--media-background-color": "transparent", width: "100%", height: "100%", position: "absolute", inset: "0", aspectRatio: "unset" } as any}
                       />
                     </div>
+                  ) : service.title === "Промо для маркетплейсов" ? (
+                    <div className="absolute inset-0 overflow-hidden">
+                      <mux-player
+                        playback-id="EuFoWgbebfKudcfyfa1KjCQIlIaKSTKrAUDnFPCIvmA"
+                        autoplay="muted"
+                        loop
+                        muted
+                        playsinline
+                        style={{ "--media-object-fit": "cover", "--media-object-position": "center", "--controls": "none", "--media-background-color": "transparent", width: "100%", height: "100%", position: "absolute", inset: "0", aspectRatio: "unset" } as any}
+                      />
+                    </div>
                   ) : service.title === "Анимационный контент" ? (
                     <div className="absolute inset-0 overflow-hidden">
                       <mux-player
@@ -170,4 +181,3 @@ export function Services() {
     </section>
   )
 }
-
