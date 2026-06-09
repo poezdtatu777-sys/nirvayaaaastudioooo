@@ -55,30 +55,6 @@ export function Contacts() {
         </svg>
       </div>
 
-      {/* Decorative glowing mushroom — bottom right */}
-      <motion.img
-        src="/amanita-muscaria-mushroom.png"
-        alt=""
-        aria-hidden="true"
-        draggable={false}
-        className="hidden md:block absolute bottom-5 right-10 w-[200px] lg:w-[260px] opacity-60 pointer-events-none select-none z-[1]"
-        style={{ mixBlendMode: "screen" }}
-        animate={{
-          y: [0, -8, 0],
-          rotate: [0, 1.5, -1.5, 0],
-          filter: [
-            "drop-shadow(0 0 8px rgba(27,107,138,0.3))",
-            "drop-shadow(0 0 25px rgba(27,107,138,0.7)) drop-shadow(0 0 50px rgba(200,148,62,0.3))",
-            "drop-shadow(0 0 8px rgba(27,107,138,0.3))",
-          ],
-        }}
-        transition={{
-          y: { duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-          rotate: { duration: 8, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-          filter: { duration: 4, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" },
-        }}
-      />
-
       <div className="max-w-4xl mx-auto px-6 relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -128,12 +104,12 @@ export function Contacts() {
           className="flex flex-col items-center gap-8"
         >
           <a
-            href="mailto:hello@nirvayastudio.com"
+            href="mailto:nirvaya.visual.studio@gmail.com"
             className="group flex items-center gap-3 text-gold text-2xl md:text-3xl font-bold hover:text-gold/80 transition-colors"
           >
             <Mail className="w-7 h-7" />
             <span className="relative">
-              hello@nirvayastudio.com
+              nirvaya.visual.studio@gmail.com
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
             </span>
           </a>
